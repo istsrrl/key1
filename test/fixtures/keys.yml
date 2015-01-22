@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Company: MyString
+  Description: MyText
+  Number: 1
+  Checkout: 2015-01-22
+  Checkin: 2015-01-22
+
+two:
+  Company: MyString
+  Description: MyText
+  Number: 1
+  Checkout: 2015-01-22
+  Checkin: 2015-01-22

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150122170751) do
+ActiveRecord::Schema.define(version: 20150122195300) do
 
   create_table "for_selects", force: true do |t|
     t.string   "code"
@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(version: 20150122170751) do
     t.string   "grouper"
     t.integer  "option_order"
     t.string   "facility"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "keys", force: true do |t|
+    t.string   "Company"
+    t.text     "Description"
+    t.integer  "Number"
+    t.date     "Checkout"
+    t.date     "Checkin"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
