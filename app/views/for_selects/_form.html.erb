@@ -34,6 +34,8 @@
   <div class="field">
     <%= f.label :facility %><br>
     <%= f.text_field :facility %>
+ <%#= f.select(:facility, grouped_options_for_select(@grouped_options), prompt: 'Choose Facility') %>
+        <%= select_tag(:sFor_select_facility, grouped_options_for_select(@grouped_options), prompt: 'Choose Facility') %>
   </div>
   <div class="field">
     <%= f.label :created_at %><br>

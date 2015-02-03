@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/marcmentis/grouped_options.git
+  revision: 9ae5c6e442ba107ee4c07cbde98c38a5830c49f2
+  specs:
+    grouped_options (0.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -50,12 +56,17 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.2)
+    kaminari (0.16.2)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.10.1)
+    polyamorous (1.1.0)
+      activerecord (>= 3.0)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.3)
@@ -74,6 +85,12 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
+    ransack (1.6.3)
+      actionpack (>= 3.0)
+      activerecord (>= 3.0)
+      activesupport (>= 3.0)
+      i18n
+      polyamorous (~> 1.1)
     rdoc (4.2.0)
       json (~> 1.4)
     sass (3.2.19)
@@ -115,9 +132,12 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   faker
   foundation-rails (= 5.3.0.1)
+  grouped_options!
   jbuilder (~> 1.2)
   jquery-rails
+  kaminari
   rails (= 4.0.2)
+  ransack
   sass-rails (= 4.0.3)
   sdoc
   sqlite3

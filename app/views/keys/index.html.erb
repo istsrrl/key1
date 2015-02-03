@@ -1,13 +1,23 @@
 <h1>Listing keys</h1>
 
+<%= paginate @keys %>
+
+<%= search_form_for @search do |f| %>
+  <div class="field">
+    <%= f.label :Company_cont, "Name contains" %>
+    <%= f.text_field :Company_cont %>
+  </div>
+  <div class="actions"><%= f.submit "Search" %></div>
+<% end %>
+
 <table>
   <thead>
     <tr>
-      <th>Company</th>
+      <th><%= sort_link @search, :Company, "Company" %></th>
       <th>Description</th>
-      <th>Number</th>
-      <th>Checkout</th>
-      <th>Checkin</th>
+      <th><%= sort_link @search, :Number, "Number" %></th>
+      <th><%= sort_link @search, :Checkout, "Checkout" %></th>
+      <th><%= sort_link @search, :Checkin, "Checkin" %></th>
       <th></th>
       <th></th>
       <th></th>
